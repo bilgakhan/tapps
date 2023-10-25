@@ -35,7 +35,7 @@ document
       .then((response) => {
         if (response.ok) {
           alert(
-            "Your message has been sent. We will get back to you shortly. Thank you!"
+            "XABARINGIZ JO'NATILDI. SIZ BILAN TEZ ORADA BOG'LANAMIZ"
           );
           document.getElementById("username").value = "";
           document.getElementById("phone").value = "";
@@ -43,7 +43,7 @@ document
           document.getElementById("orientr").value = "";
           selectedService.checked = false;
         } else {
-          alert("Oops! Failed to send your message. Please try again.");
+          alert("NIMADIR XATO BO'LDI. QAYTADAN URINIB KO'RING");
         }
       })
       .catch((error) => {
