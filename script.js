@@ -8,10 +8,15 @@ document
     const address = document.getElementById("address").value;
     const orientr = document.getElementById("orientr").value;
 
-    const API_KEY = "6496848472:AAHX7F5Zz5DWX59GW4LuTz2MTygr-zvj7TE";
-    const chatId = "5692222234";
+    const selectedService = document.querySelector(
+      'input[name="service"]:checked'
+    );
+    const service = selectedService ? selectedService.value : "";
 
-    const message = `You have a new message!\nName: ${username}\nPhone: ${phone}\nAddress: ${address}\nOrientr: ${orientr}`;
+  const API_KEY = "6496848472:AAHX7F5Zz5DWX59GW4LuTz2MTygr-zvj7TE";
+  const chatId = "5692222234";
+
+    const message = `You have a new message!\nName: ${username}\nPhone: ${phone}\nAddress: ${address}\nOrientr: ${orientr}\nService: ${service}`;
 
     const url = `https://api.telegram.org/bot${API_KEY}/sendMessage`;
     const params = new URLSearchParams({
@@ -36,6 +41,7 @@ document
           document.getElementById("phone").value = "";
           document.getElementById("address").value = "";
           document.getElementById("orientr").value = "";
+          selectedService.checked = false;
         } else {
           alert("Oops! Failed to send your message. Please try again.");
         }
