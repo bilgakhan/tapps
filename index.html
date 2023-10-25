@@ -11,64 +11,101 @@
     />
   </head>
   <body>
-    <center>
-      <h1>
+    <div class="container">
+      <h1 class="text-center">
         Aloqa ma'lumotlaringizni <br />
         qoldiring
       </h1>
       <form id="contact-form">
         <div class="col">
-          <!-- <label for="username">Ismingiz</label> -->
-          <br />
-          <input
-            style="width: 80%"
-            type="text"
-            id="username"
-            name="username"
-            required
-            placeholder="Ismingizni yozing"
-          /><br />
-          <br />
-          <!-- <label for="phone">Telefon raqamingiz</label> <br /> -->
-          <input
-            style="width: 80%"
-            type="text"
-            id="phone"
-            name="phone"
-            required
-            placeholder="Telefon raqamingizni yozing"
-          />
-          <br />
-          <!-- <label for="address">Manzilingiz</label> -->
-          <br />
-          <input
-            style="width: 80%"
-            type="text"
-            id="address"
-            name="address"
-            required
-            placeholder="Manzilingizni yozing"
-          /><br />
-
-          <!-- <label for="orientr">Orientr (Mo'ljal)ingizni yozing</label> -->
-          <br />
-          <input
-            style="width: 80%"
-            type="text"
-            id="orientr"
-            name="orientr"
-            required
-            placeholder="Orientringizni yozing"
-          /><br />
-          <br />
-          <input
-            style="width: 80%; border: 1px solid black"
-            type="submit"
-            value="Yuborish"
-          />
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="text"
+              id="username"
+              name="username"
+              required
+              placeholder="Ismingizni yozing"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="text"
+              id="phone"
+              name="phone"
+              required
+              placeholder="Telefon raqamingizni yozing"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="text"
+              id="address"
+              name="address"
+              required
+              placeholder="Manzilingizni yozing"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="text"
+              id="orientr"
+              name="orientr"
+              required
+              placeholder="Orientringizni yozing"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="new"
+              name="service"
+              value="new"
+              required
+            />
+            <label class="form-check-label" for="new">Yangi ulanish</label>
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="setting"
+              name="service"
+              value="setting"
+              required
+            />
+            <label class="form-check-label" for="setting">Texnik yordam</label>
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="camera"
+              name="service"
+              value="camera"
+              required
+            />
+            <label class="form-check-label" for="camera">IP Kamera</label>
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-check-input"
+              type="radio"
+              id="other"
+              name="service"
+              value="other"
+              required
+            />
+            <label class="form-check-label" for="other">Boshqa xizmatlar</label>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Yuborish" />
         </div>
       </form>
-    </center>
+    </div>
 
     <script src="script.js"></script>
     <script
