@@ -5,11 +5,13 @@ document
 
     const username = document.getElementById("username").value;
     const phone = document.getElementById("phone").value;
+    const address = document.getElementById("address").value;
+    const orientr = document.getElementById("orientr").value;
 
     const API_KEY = "6496848472:AAHX7F5Zz5DWX59GW4LuTz2MTygr-zvj7TE";
     const chatId = "5692222234";
 
-    const message = `Username: ${username}\nPhone Number: ${phone}`;
+    const message = `Username: ${username}\nPhone Number: ${phone}\nManzil: ${address}\nOrientri: ${orientr}`;
 
     const url = `https://api.telegram.org/bot${API_KEY}/sendMessage`;
     const params = new URLSearchParams({
@@ -27,15 +29,19 @@ document
     })
       .then((response) => {
         if (response.ok) {
-          alert("Message sent successfully!");
+          alert(
+            "Xabaringiz yuborildi. Orqada qaytishingiz mumkun. Siz bilan yaqin orada bog'lanamiz"
+          );
           document.getElementById("username").value = "";
           document.getElementById("phone").value = "";
+          document.getElementById("address").value = "";
+          document.getElementById("orientr").value = "";
         } else {
-          alert("Failed to send message. Please try again later.");
+          alert("Oppps. Xabaringiz yuborilmadi. Qaytadan urunib ko'ring");
         }
       })
       .catch((error) => {
-        console.error("Error sending message:", error);
-        alert("An error occurred. Please try again later.");
+        console.error("Xabarni yuborishda xatolik:", error);
+        alert("Xatolik yuzaga keladi. Qayta urunib ko'ring");
       });
   });
