@@ -13,8 +13,8 @@ document
     );
     const service = selectedService ? selectedService.value : "";
 
-    const API_KEY = "6496848472:AAHX7F5Zz5DWX59GW4LuTz2MTygr-zvj7TE";
-    const chatId = "5692222234";
+    const API_KEY = "6495751537:AAFF9wMzatEw02tT9c8bcBGSBlDlOUYRHN4";
+    const chatId = "6622574837";
 
     const message = `Sizga yangi xabar keldi!\nIsmi: ${username}\nTelefon raqami: ${phone}\nManzili: ${address}\nOrientr: ${orientr}\nXizmat turi: ${service}`;
 
