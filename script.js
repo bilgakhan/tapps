@@ -11,7 +11,7 @@ document
     const API_KEY = "6496848472:AAHX7F5Zz5DWX59GW4LuTz2MTygr-zvj7TE";
     const chatId = "5692222234";
 
-    const message = `Ismi: ${username}\nTelefon raqami: ${phone}\nManzil: ${address}\nOrientri: ${orientr}`;
+    const message = `Siz yangi xabar keldi!\nIsmi: ${username}\nTelefon raqami: ${phone}\nManzil: ${address}\nOrientri: ${orientr}`;
 
     const url = `https://api.telegram.org/bot${API_KEY}/sendMessage`;
     const params = new URLSearchParams({
