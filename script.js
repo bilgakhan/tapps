@@ -13,10 +13,10 @@ document
     );
     const service = selectedService ? selectedService.value : "";
 
-  const API_KEY = "6496848472:AAHX7F5Zz5DWX59GW4LuTz2MTygr-zvj7TE";
-  const chatId = "5692222234";
+    const API_KEY = "6496848472:AAHX7F5Zz5DWX59GW4LuTz2MTygr-zvj7TE";
+    const chatId = "5692222234";
 
-    const message = `You have a new message!\nName: ${username}\nPhone: ${phone}\nAddress: ${address}\nOrientr: ${orientr}\nService: ${service}`;
+    const message = `Sizga yangi xabar keldi!\nIsmi: ${username}\nTelefon raqami: ${phone}\nManzili: ${address}\nOrientr: ${orientr}\nXizmat turi: ${service}`;
 
     const url = `https://api.telegram.org/bot${API_KEY}/sendMessage`;
     const params = new URLSearchParams({
